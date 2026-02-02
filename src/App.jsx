@@ -1,9 +1,11 @@
 import React from "react";
 import Hero from "./sections/Hero";
+import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
   return (
     <>
+        <Navbar />
         <Hero />
     </>
   );
