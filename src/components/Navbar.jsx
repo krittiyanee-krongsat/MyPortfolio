@@ -16,28 +16,30 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header className={`navbar ${scrolled ? 'scroed' : 'not scrolled'}`}>
+        <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
             <div className="inner">
-                <a className="logo" href="#hero">
-                    Adrian | JSM
+                <a href="#hero" className="flex items-center gap-1 logo">
+                    <img src="images/logos/HouseNav.png" className="md:size-5 size-5" />
+                    <span>Home</span>
                 </a>
 
                 <nav className="desktop">
-                    <ul>
-                        {navLinks.map(({link, name}) => (
-                            <li key={name} className="group">
-                                <a href={link}>
-                                    <span>{name}</span>
-                                    <span className="underline"></span>
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
+                <ul>
+                    {navLinks.map(({ link, name }) => (
+                    <li key={name} className="group">
+                        <a href={link}>
+                        <span>{name}</span>
+                        <span className="underline" />
+                        </a>
+                    </li>
+                    ))}
+                </ul>
                 </nav>
+
                 <a href="#contact" className="contact-btn group">
-                    <div className="inner">
-                        <span>Contact Me</span>
-                    </div>
+                <div className="inner">
+                    <span>Contact me</span>
+                </div>
                 </a>
             </div>
         </header>
