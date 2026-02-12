@@ -20,10 +20,10 @@ const Hero = () => {
     useEffect(() => {
         const options = {
             strings: words,
-            typeSpeed: 50,
-            startDelay: 1500,
-            backSpeed: 30,
-            backDelay: 2000,
+            typeSpeed: 50, //ความเร็วในการพิมพ์ (มิลลิวินาที)
+            startDelay: 1500, //หน่วงเวลาก่อนเริ่มพิมพ์ 
+            backSpeed: 30, //ความเร็วในการลบ
+            backDelay: 2000, //หน่วงเวลาก่อนเริ่มลบ
             loop: true,
         };
 
@@ -44,11 +44,8 @@ const Hero = () => {
                                 Hi, my name is
                             </p>
                                 KRITTIYANEE KRONGSAT
-                                    <p className="flex items-center md:gap-3 gap-1 pb-2">
-                                        <span
-                                            ref={typedElementRef}
-                                            className="text-white text-2xl md:text-2xl font-medium relative z-10 pointer-events-none"
-                                        />
+                                    <p className="md:gap-3 gap-1 pb-2 text-white text-2xl md:text-2xl font-medium leading-relaxed">
+                                        <span ref={typedElementRef}/>
                                     </p>
                                         <div className="flex items-center gap-3">
                                             {heroLinks.map(({ link, img }) => (
