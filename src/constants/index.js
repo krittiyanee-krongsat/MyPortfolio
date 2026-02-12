@@ -14,9 +14,9 @@ const navLinks = [
 ];
 
 const words = [
-    { text: 'I am interested in Frontend Development' },
-    { text: 'committed to building secure' },
-    { text: 'user friendly and accessible websites' },
+    'I am interested in Frontend Development',
+    'committed to building secure',
+    'user friendly and accessible websites'
 ]
 
 const heroLinks = [
