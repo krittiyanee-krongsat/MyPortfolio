@@ -49,6 +49,10 @@ section {
     @apply px-5 md:px-10 md:mt-40 mt-20;
   }
 
+  .section-container {
+  @apply 2xl:container xl:px-20 md:px-12 px-4 mx-auto;
+  }
+
   .mt-responsive {
     @apply xl:mt-20 md:mt-0 mt-40;
   }
@@ -96,7 +100,7 @@ section {
   }
 
   .hero-badge {
-    @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+    @apply bg-black-100 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
 
   .hero-3d-layout {

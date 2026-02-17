@@ -14,9 +14,9 @@ const navLinks = [
 ];
 
 const words = [
-    'I am interested in Frontend Development',
-    'committed to building secure',
-    'user friendly and accessible websites'
+    'I build modern web applications',
+    'showcasing my projects',
+    'experience and technical skills'
 ]
 
 const heroLinks = [
