@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar.jsx";
 import OverviewSection from "./sections/OverviewSection.jsx";
 import About from "./components/Overview/About.jsx";
+import ProjectSection from "./sections/ProjectSection.jsx";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Hero />
         <OverviewSection/>
         <About/>
+        <ProjectSection/>
     </>
   );
 };

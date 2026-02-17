@@ -1,6 +1,5 @@
 import TitleHeader from '../components/TitleHeader'
 
-
 const OverviewSection = () => {
   return (
     <section id="overview" className="w-full md:mt-5 mt-5 section-padding xl:px-0">
