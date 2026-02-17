@@ -11,7 +11,6 @@ const App = () => {
         <Hero />
         <OverviewSection/>
         <About/>
-        <img src="/images/WallpaperCom.jpg" className="mt:56 md:mt-56"/>
     </>
   );
 };
