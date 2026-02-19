@@ -106,5 +106,5 @@ export {
     navLinks,
     words,
     heroLinks,
-    projects
+    projects,
 }

@@ -1,8 +1,7 @@
 import Tilt from 'react-parallax-tilt';
-import { motion } from 'framer-motion'
-// use public image path for github logo
-import { projects } from '../../constants'
-import { fadeIn } from '../../utils/motion'
+import { motion } from 'framer-motion';
+import { projects } from '../../constants';
+import { fadeIn } from '../../utils/motion';
 
 const ProjectCard = ({ 
     index, 
@@ -75,4 +74,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

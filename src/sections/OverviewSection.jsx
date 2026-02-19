@@ -1,4 +1,4 @@
-import TitleHeader from '../components/TitleHeader'
+import TitleHeader from '../components/TitleHeader';
 
 const OverviewSection = () => {
   return (
@@ -12,4 +12,4 @@ const OverviewSection = () => {
   )
 }
 
-export default OverviewSection
+export default OverviewSection;

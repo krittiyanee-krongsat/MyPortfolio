@@ -38,7 +38,7 @@ section {
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
   }
-  /* Gradient text utilities for project tags */
+  /* ข้อความไล่ระดับสีสำหรับ Projects */
   .blue-text-gradient {
     @apply text-blue-100;
   }

@@ -1,8 +1,8 @@
-import { useLayoutEffect, useRef } from "react"
-import gsap from "gsap"
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const About = ({clientHeight}) => {
     const sectionRef = useRef(null)
@@ -89,4 +89,4 @@ const About = ({clientHeight}) => {
     )
 }
 
-export default About
+export default About;

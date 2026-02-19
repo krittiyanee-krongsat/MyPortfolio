@@ -11,4 +11,4 @@ const TitleHeader = ({ title, sub}) => {
   )
 }
 
-export default TitleHeader
+export default TitleHeader;

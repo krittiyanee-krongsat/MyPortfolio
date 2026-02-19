@@ -190,4 +190,4 @@ export function IsometricRoom(props) {
   )
 }
 
-useGLTF.preload('/models/Isometric.glb')
+useGLTF.preload('/models/Isometric.glb');

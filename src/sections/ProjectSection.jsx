@@ -1,4 +1,4 @@
-import TitleHeader from "../components/TitleHeader"
+import TitleHeader from "../components/TitleHeader";
 
 const ProjectSection = () => {
   return (
@@ -12,4 +12,4 @@ const ProjectSection = () => {
   )
 }
 
-export default ProjectSection
+export default ProjectSection;
