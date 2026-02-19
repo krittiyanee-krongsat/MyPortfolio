@@ -34,8 +34,77 @@ const heroLinks = [
   },
 ]
 
+const projects = [
+  {
+    name: "Nextrip",
+    description:
+      "Built a mobile application that uses AI to recommend travel destinations based on users preferences, budget, and mood, helping users easily find suitable places to visit.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: './images/NexTrip.jpg',
+    source_code_link: "https://github.com/krittiyanee-krongsat",
+  },
+
+  {
+    name: "CRUD System",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: './images/CrudSystem.png',
+    source_code_link: "https://github.com/krittiyanee-krongsat",
+  },
+
+  {
+    name: "Poke API",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: './images/PokeAPI.png',
+    source_code_link: "https://github.com/krittiyanee-krongsat",
+  },
+]
+
 export {
     navLinks,
     words,
-    heroLinks
+    heroLinks,
+    projects
 }

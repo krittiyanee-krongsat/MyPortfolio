@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import OverviewSection from "./sections/OverviewSection.jsx";
 import About from "./components/Overview/About.jsx";
 import ProjectSection from "./sections/ProjectSection.jsx";
+import Projects from "./components/MyProjects/Projects.jsx";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <OverviewSection/>
         <About/>
         <ProjectSection/>
+        <Projects/>
     </>
   );
 };

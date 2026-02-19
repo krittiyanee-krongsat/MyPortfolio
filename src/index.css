@@ -22,9 +22,13 @@ section {
 @theme {
   --font-sans: "Mona Sans", sans-serif;
   --color-white-50: #F8F9FA;
+  --color-white-60: #6C757D80;;
   --color-black-50: #CED4DA;
   --color-black-100: #343A40;
   --color-black-200: #282732;
+  --color-blue-100: #58C4DC;
+  --color-green-100: #57C785;
+  --color-red-100: #ED5353;
 }
 
 @layer utilities {
@@ -33,6 +37,18 @@ section {
   }
   .flex-col-center {
     @apply flex flex-col justify-center items-center;
+  }
+  /* Gradient text utilities for project tags */
+  .blue-text-gradient {
+    @apply text-blue-100;
+  }
+
+  .green-text-gradient {
+    @apply text-green-100;
+  }
+
+  .pink-text-gradient {
+    @apply text-red-100;
   }
 }
 
