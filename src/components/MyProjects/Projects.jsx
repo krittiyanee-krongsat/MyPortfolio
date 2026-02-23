@@ -21,9 +21,9 @@ const ProjectCard = ({
                     scale: 1,
                     speed: 450,
                 }}
-                className='bg-black-100 p-5 rounded-2xl sm:w-[360px] w-full'
+                className='project-card'
             >
-                <div className='relative w-full h-[230px]'>
+                <div className='img-card'>
                     <img 
                         src={image}
                         alt='project_image'
@@ -49,7 +49,7 @@ const ProjectCard = ({
                     <p className='mt-2 text-secondary text-[14px]'>{description}</p>
                 </div>
 
-                <div className='mt-4 flex flex-wrap gap-2'>
+                <div className='tag-card'>
                     {tags.map((tag) => (
                         <p 
                             key={`${name}-${tag.name}`}
@@ -66,7 +66,7 @@ const ProjectCard = ({
 
 const Projects = () => {
   return (
-    <div className='mt-20 flex flex-wrap gap-7'>
+    <div className='layout-projects'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

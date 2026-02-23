@@ -73,7 +73,7 @@ section {
     @apply xl:mt-20 md:mt-0 mt-40;
   }
 
-  /* General Grids */
+  /* Grids ทั่วไป */
   .grid-base {
     @apply grid grid-cols-1;
   }
@@ -341,9 +341,25 @@ section {
       }
     }
   }
+
+  .project-card {
+    @apply bg-black-200 p-5 rounded-2xl sm:w-[360px] w-full;
+  }
+
+  .img-card {
+    @apply relative w-full sm:h-[230px];
+  }
+
+  .tag-card {
+    @apply mt-4 flex flex-wrap gap-2;
+  }
+
+  .layout-projects{
+    @apply mt-10 flex flex-wrap gap-7 justify-center;
+  }
 }
 
-/* Hero text slider starts */
+/* แถบเลื่อนข้อความ Hero เริ่มต้นขึ้น */
 .slide {
   display: inline-block;
   flex-direction: column;
@@ -383,7 +399,7 @@ section {
   }
 }
 
-/* Hero Text slider ends */
+/* แถบเลื่อนข้อความ Hero สิ้นสุดลง */
 
 .gradient-line {
   width: 2px;
