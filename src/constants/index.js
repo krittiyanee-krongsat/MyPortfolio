@@ -1,3 +1,5 @@
+import { title } from "framer-motion/client";
+
 const navLinks = [
   {
     name: "Projects",
@@ -102,9 +104,25 @@ const projects = [
   },
 ]
 
+const experiences = [
+  {
+    review: "IT and multimedia consulting company specializing in the design and development of digital solutions, including web applications and interactive media.",
+    imgPath: "./images/CodeSmash.png",
+    logoPath: "./images/CodeSmash.png",
+    title: "Full Stack Developer Internship",
+    date: "June 2024 - November 2024",
+    reponsibilities: [
+      "Designed UX/UI using Figma and built component based UI with Storybook.",
+      "Developed interactive web applications and a card matching game using React.",
+      "Integrated frontend with backend services using AJAX and REST APIs.",
+    ],
+  }
+]
+
 export {
     navLinks,
     words,
     heroLinks,
     projects,
+    experiences,
 }

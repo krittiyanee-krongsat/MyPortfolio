@@ -64,7 +64,7 @@ const About = ({clientHeight}) => {
         <section ref={sectionRef} className="flex flex-col items-center">
             <div
                 className={`${
-                clientHeight > 650 ? "pt-10 pb-5" : "pt-10 pb-5"
+                clientHeight > 650 ? "pt-15 pb-5" : "pt-15 pb-5"
                 } section-container`}
             >
                 <h1

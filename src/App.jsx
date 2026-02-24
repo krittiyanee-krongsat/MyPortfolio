@@ -5,6 +5,7 @@ import OverviewSection from "./sections/OverviewSection.jsx";
 import About from "./components/Overview/About.jsx";
 import ProjectSection from "./sections/ProjectSection.jsx";
 import Projects from "./components/MyProjects/Projects.jsx";
+import ExperienceSection from "./sections/ExperienceSection.jsx";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <About/>
         <ProjectSection/>
         <Projects/>
+        <ExperienceSection/>
     </>
   );
 };

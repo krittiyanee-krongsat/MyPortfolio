@@ -355,7 +355,7 @@ section {
   }
 
   .layout-projects{
-    @apply mt-10 flex flex-wrap gap-7 justify-center;
+    @apply mt-15 flex flex-wrap gap-7 justify-center;
   }
 }
 
