@@ -1,5 +1,3 @@
-import { title } from "framer-motion/client";
-
 const navLinks = [
   {
     name: "Projects",
@@ -116,7 +114,19 @@ const experiences = [
       "Developed interactive web applications and a card matching game using React.",
       "Integrated frontend with backend services using AJAX and REST APIs.",
     ],
-  }
+  },
+  {
+    review: "A Coursera course focused on applying Generative AI to improve collaboration, development workflows, and efficiency in software engineering teams.",
+    imgPath: "./images/CourseraLogo.png",
+    logoPath: "./images/CourseraLogo.png",
+    title: "GenAI For Software Engineering Teams",
+    date: "February 2025 ",
+    reponsibilities: [
+      "Applied Generative AI in a mood to based travel recommendation application.",
+      "Used GenAI to support software development and system logic design.",
+      "Demonstrated awareness of ethical and responsible AI usage.",
+    ],
+  },
 ]
 
 export {
