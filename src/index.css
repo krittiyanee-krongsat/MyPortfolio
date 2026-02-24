@@ -22,7 +22,8 @@ section {
 @theme {
   --font-sans: "Mona Sans", sans-serif;
   --color-white-50: #F8F9FA;
-  --color-white-60: #6C757D80;;
+  --color-white-60: #6C757D80;
+  --color-white-70: #6C757D;
   --color-black-50: #CED4DA;
   --color-black-100: #343A40;
   --color-black-200: #282732;
@@ -252,7 +253,7 @@ section {
   }
 
   .card-border {
-    @apply border border-black-50 bg-black-100;
+    @apply border border-black bg-white-70;
   }
 
   .marquee-item {
