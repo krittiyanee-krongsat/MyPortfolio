@@ -11,11 +11,11 @@ const ExperienceSection = () => {
                 sub="💼Experience" />
                 <div className="mt-32 relative">
                     <div className="relative z-50 xl:space-y-32 space-y-10">
-                      {experiences.map((card) => (
+                      {experiences.map((card, index) => (
                         <div key={card.title} className="exp-card-wrapper">
                           <div className="xl:w-2/6">
-                            <GlowCard card={card}>
-                              <div>
+                            <GlowCard card={card} index={index}>
+                              <div className="w-13">
                                 <img src={card.imgPath} alt={card.title}/>
                               </div>
                             </GlowCard>

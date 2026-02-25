@@ -253,7 +253,7 @@ section {
   }
 
   .card-border {
-    @apply border border-black bg-white-70;
+    @apply border border-black bg-black-200;
   }
 
   .marquee-item {
