@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import ButtonProjects from './ButtonProjects';
 
 const GlowCard = ({ card, children, index }) => {
     const cardRefs = useRef([]);
@@ -35,7 +36,16 @@ const GlowCard = ({ card, children, index }) => {
             <div className='mb-5'>
                 <p className='text-white-50 text-lg'>{card.review}</p>
             </div>
-            {children}
+            <div className='flex justify-between items-end'>
+                {children}
+                {index === 1 && (
+                    <ButtonProjects 
+                    text="View Certificate" 
+                    className="md:w-40 md:h-12 w-40 h-10"
+                    id={card}
+                    />
+                )}
+            </div>
     </div>
   )
 }

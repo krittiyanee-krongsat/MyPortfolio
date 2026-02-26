@@ -252,6 +252,15 @@ section {
     }
   }
 
+  .cta-button-card {
+    @apply w-[150px] h-[30px] px-4 py-4 rounded-md bg-black-50 flex justify-center items-center relative cursor-pointer overflow-hidden;
+
+    .text {
+      @apply md:text-xs text-xs text-white-70 font-medium transition-all duration-500
+        group-hover:text-black-200;
+    }
+  }
+
   .card-border {
     @apply border border-black bg-black-200;
   }
