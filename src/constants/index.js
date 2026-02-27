@@ -1,4 +1,4 @@
-const navLinks = [
+export const navLinks = [
   {
     name: "Projects",
     link: "#projects",
@@ -129,10 +129,61 @@ const experiences = [
   },
 ]
 
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: "/images/tech/html.png",
+  },
+  {
+    name: "CSS 3",
+    icon: "/images/tech/css.png",
+  },
+  {
+    name: "JavaScript",
+    icon: "/images/tech/javascript.png",
+  },
+  {
+    name: "TypeScript",
+    icon: "/images/tech/typescript.png",
+  },
+  {
+    name: "React JS",
+    icon: "/images/tech/reactjs.png",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "/images/tech/tailwind.png",
+  },
+  {
+    name: "Node JS",
+    icon: "/images/tech/nodejs.png",
+  },
+  {
+    name: "Git",
+    icon: "/images/tech/git.png",
+  },
+  {
+    name: "MySQL",
+    icon: "/images/tech/mysql.svg",
+  },
+  {
+    name: "Figma",
+    icon: "/images/tech/figma.png",
+  },
+  {
+    name: "Storybook",
+    icon: "/images/tech/storybook.svg",
+  },
+  {
+    name: "Three JS",
+    icon: "/images/tech/threejs.svg",
+  },
+]
+
 export {
-    navLinks,
     words,
     heroLinks,
     projects,
     experiences,
+    technologies,
 }

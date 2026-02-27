@@ -6,6 +6,8 @@ import About from "./components/Overview/About.jsx";
 import ProjectSection from "./sections/ProjectSection.jsx";
 import Projects from "./components/MyProjects/Projects.jsx";
 import ExperienceSection from "./sections/ExperienceSection.jsx";
+import SkillsSection from "./sections/SkillsSection.jsx";
+import Tech from "./components/Skills/Tech.jsx";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <ProjectSection/>
         <Projects/>
         <ExperienceSection/>
+        <SkillsSection/>
+        <Tech/>
     </>
   );
 };
