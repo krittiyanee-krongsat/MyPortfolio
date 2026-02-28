@@ -1,6 +1,12 @@
-const Button = ({ text, className, id }) => {
+const Button = ({ text, className, id, href = '#', onClick }) => {
+    // href allows the button to act as a link; onClick can be used for custom handlers
     return(
-    <a className={`${className ?? ''} cta-wrapper`} id={id}> 
+    <a
+        href={href}
+        onClick={onClick}
+        className={`${className ?? ''} cta-wrapper`}
+        id={id}
+    > 
         <div className="cta-button group">
             <div className="bg-circle"/>
             <p className="text">{text}</p>
