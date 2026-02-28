@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
+import ComputerExperience from "../components/Contact/ComputerExperience";
 
 const ContactSection = () => {
   const formRef = useRef(null);
@@ -120,7 +121,7 @@ const ContactSection = () => {
               </div>
               <div className="xl:col-span-7 min-h-96">
                 <div className="bg-slate-400 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-
+                  <ComputerExperience/>
                 </div>
               </div>
             </div>

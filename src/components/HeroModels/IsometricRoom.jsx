@@ -8,8 +8,8 @@ export function IsometricRoom(props) {
   const { nodes, materials, animations } = useGLTF('/models/Isometric.glb');
   const { actions } = useAnimations(animations, group);
 
-  //const matcapTexture = useTexture("/images/WallpaperCom.jpg");
-  const matcapTexture = useVideoTexture("/Videos/WallpaperVideos.mp4");
+  const matcapTexture = useTexture("/images/WallpaperCom.jpg");
+  //const matcapTexture = useVideoTexture("/Videos/WallpaperVideos.mp4");
 
   const screen_1 = new THREE.MeshPhongMaterial({
       map: matcapTexture,
