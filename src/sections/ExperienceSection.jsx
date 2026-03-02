@@ -5,23 +5,27 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/all"
 
+// เปิดใช้งาน ScrollTrigger ของ GSAP
 gsap.registerPlugin(ScrollTrigger);
 
 const ExperienceSection = () => {
   useGSAP(() => {
+    // เลือก element ทุกตัวที่มี class = timeline-card
     gsap.utils.toArray(".timeline-card").forEach((card) => {
+      // ทำ animation ตอน scroll เจอการ์ด
       gsap.from(card, {
-        xPercent: -100,
-        opacity: 0,
+        xPercent: -100, // เริ่มจากด้านซ้าย (100% ของความกว้างตัวเอง)
+        opacity: 0, // เริ่มจากโปร่งใส
         transformOrigin: 'left left',
-        duration: 1,
-        ease: 'power2.inOut',
+        duration: 1, // ความเร็วของ animation
+        ease: 'power2.inOut', // easing แบบนุ่มนวล
         scrollTrigger: {
-          trigger: card,
-          start: 'top 80%',
+          trigger: card, // กำหนด element ที่จะเป็น trigger
+          start: 'top 80%', // เริ่มเมื่อ top ของการ์ดถึง 80% ของ viewport
         }
       })
     })
+    // ทำ animation ให้เส้น timeline หดลงตาม scroll
     gsap.to('.timeline',{
       transformOrigin: 'bottom bottom',
       ease: 'power1.inOut',
@@ -29,23 +33,26 @@ const ExperienceSection = () => {
         trigger: '.timeline',
         start: 'top center',
         end: '70% center',
+        // ทำงานทุกครั้งที่ scroll เปลี่ยน
         onUpdate: (self) => {
           gsap.to('.timeline', {
             scaleY: 1 - self.progress,
+            // ทำให้ timeline หดลงตาม progress ของ scroll
           })
         }
       }
     })
 
+    // animation ข้อความใน experience
     gsap.utils.toArray(".expText").forEach((text) => {
       gsap.from(text, {
         xPercent: 0,
-        opacity: 0,
+        opacity: 0, // เริ่มจากโปร่งใส
         duration: 1,
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: text,
-          start: 'top 60%',
+          start: 'top 60%', // เริ่มเมื่อ top ของข้อความถึง 60% ของ viewport
         }
       })
     })

@@ -7,13 +7,15 @@ import gsap from "gsap";
 import Typed from "typed.js";
 
 const Hero = () => {
+    // ref สำหรับ element ที่จะพิมพ์ข้อความแบบไทป์
     const typedElementRef = useRef(null);
 
+    // ใช้ GSAP เพื่อทำ animation ตอนโหลดหน้า
     useGSAP(() => {
     gsap.fromTo(
       ".hero-text h1",
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+      { y: 50, opacity: 0 }, // เริ่มจากขยับลง 50px และโปร่งใส
+      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" } // ขยับกลับขึ้นและจางเข้ามาแบบสลับกันทีละบรรทัด
     );
     });
 
@@ -27,8 +29,9 @@ const Hero = () => {
             loop: true,
         };
 
+        // สร้าง instance ของ Typed.js และผูกกับ element ที่ ref ชี้ไป
         const typed = new Typed(typedElementRef.current, options);
-
+        // ทำความสะอาด instance เมื่อ component ถูก unmount
         return() => typed.destroy();
     }, []);
     

@@ -4,21 +4,25 @@ import { useGLTF, useAnimations, useTexture, useVideoTexture } from '@react-thre
 import * as THREE from "three";
 
 export function IsometricRoom(props) {
+  // สร้าง ref เอาไว้เก็บ group ของโมเดล (ใช้ควบคุม animation)
   const group = React.useRef();
   const { nodes, materials, animations } = useGLTF('/models/Isometric.glb');
   const { actions } = useAnimations(animations, group);
 
+  // โหลดรูปภาพมาใช้เป็น texture (ภาพหน้าจอ)
   const matcapTexture = useTexture("/images/WallpaperCom.jpg");
-  //const matcapTexture = useVideoTexture("/Videos/WallpaperVideos.mp4");
 
+  // สร้าง material สำหรับจอที่ 1
   const screen_1 = new THREE.MeshPhongMaterial({
       map: matcapTexture,
   });
 
+  // สร้าง material สำหรับจอที่ 2
   const screen_2 = new THREE.MeshPhongMaterial({
       map: matcapTexture,
   });
 
+  // สร้าง material สำหรับจอที่ 3
   const screen_3 = new THREE.MeshPhongMaterial({
       map: matcapTexture,
   });

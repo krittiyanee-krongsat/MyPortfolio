@@ -5,19 +5,22 @@ import TitleHeader from "../components/TitleHeader";
 import ComputerExperience from "../components/Contact/ComputerExperience";
 
 const ContactSection = () => {
-  const formRef = useRef(null);
-  const [loading, setLoading] = useState(false);
+  const formRef = useRef(null); // ref สำหรับจับฟอร์ม เพื่อส่งข้อมูลผ่าน emailjs
+  const [loading, setLoading] = useState(false); // state สำหรับแสดงสถานะการส่งอีเมล (กำลังส่งหรือไม่)
+  // state สำหรับเก็บข้อมูลฟอร์ม
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
+  // ฟังก์ชันสำหรับอัปเดต state เมื่อมีการเปลี่ยนแปลงในฟอร์ม
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
+  // ฟังก์ชันสำหรับจัดการการส่งฟอร์ม
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -27,9 +30,10 @@ const ContactSection = () => {
       alert('Please enter a valid email address.');
       return;
     }
-
+    // ตั้งสถานะเป็นกำลังส่ง
     setLoading(true);
 
+    // ใช้ try-catch เพื่อจัดการกับการส่งอีเมลและจับข้อผิดพลาด
     try {
       await emailjs.sendForm(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -38,7 +42,7 @@ const ContactSection = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
       alert('Message sent successfully. Thank you for reaching out!');
-      // clear form
+      // รีเซ็ตฟอร์มหลังจากส่งสำเร็จ
       setForm({ name: '', email: '', message: '' });
     } catch (error) {
       console.error("Error sending email:", error);
@@ -51,7 +55,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="w-full md:mt-40 mt-20 section-padding xl:px-0">
         <div className="w-full h-full md:px-20 px-5">
-            <TitleHeader 
+            <TitleHeader
                 title="Contact" 
                 sub="💬For professional inquiries or opportunities"
             />

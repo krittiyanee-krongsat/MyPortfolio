@@ -12,9 +12,11 @@ const ProjectCard = ({
     source_code_link,
 }) => {
     return (
+        // ทำ animation ตอนแสดงการ์ด โดยใช้ fadeIn จาก utils/motion
         <motion.div
             variants={fadeIn("up", "spring", index * 0.5, 0.75)}
         >
+            {/* ทำเอฟเฟกต์เอียงตามเมาส์ */}
             <Tilt
                 options={{
                     max: 45,
@@ -23,6 +25,7 @@ const ProjectCard = ({
                 }}
                 className='project-card'
             >
+                {/* ส่วนรูปโปรเจกต์ */}
                 <div className='img-card'>
                     <img 
                         src={image}
@@ -30,6 +33,7 @@ const ProjectCard = ({
                         className='w-full h-full object-cover rounded-2xl'
                     />
 
+                    {/* ปุ่ม GitHub มุมขวาบน */}
                     <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                         <div
                             onClick={() => window.open(source_code_link, "_blank")}
@@ -43,12 +47,14 @@ const ProjectCard = ({
                         </div>
                     </div>
                 </div>
-
+                
+                {/* ชื่อ + คำอธิบาย */}
                 <div className='mt-5'>
                     <h3 className='text-white font-bold text-[24px]'>{name}</h3>
                     <p className='mt-2 text-secondary text-[14px]'>{description}</p>
                 </div>
 
+                {/* แสดงแท็กของโปรเจกต์ */}
                 <div className='tag-card'>
                     {tags.map((tag) => (
                         <p 
@@ -64,10 +70,12 @@ const ProjectCard = ({
     )
 }
 
+// Component รวมโปรเจกต์ทั้งหมด
 const Projects = () => {
   return (
     <div className='layout-projects'>
         {projects.map((project, index) => (
+        // วนลูปสร้าง ProjectCard ตามข้อมูลใน array projects
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
     </div>
