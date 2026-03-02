@@ -9,6 +9,7 @@ import ExperienceSection from "./sections/ExperienceSection.jsx";
 import SkillsSection from "./sections/SkillsSection.jsx";
 import Tech from "./components/Skills/Tech.jsx";
 import ContactSection from "./sections/ContactSection.jsx";
+import Footer from "./sections/Footer.jsx";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <SkillsSection/>
         <Tech/>
         <ContactSection/>
+        <Footer/>
     </>
   );
 };

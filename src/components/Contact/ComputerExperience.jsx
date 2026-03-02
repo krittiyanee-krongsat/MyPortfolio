@@ -1,5 +1,3 @@
-import { Suspense } from "react"
-import { Environment } from "@react-three/drei"
 import { OrbitControls } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 
@@ -8,13 +6,13 @@ import ComputerPack from "./ComputerPack"
 const ComputerExperience = () => {
     return (
       <Canvas shadows camera={{ position: [0, 0, 15], fov: 45 }}>
-          <ambientLight intensity={0.5} color="#94A3B8"/>
-          <directionalLight position={[5, 5, 5]} intensity={2.5} color="#fff4e6" />
+          <ambientLight intensity={0.8} color="#94A3B8"/>
+          <directionalLight position={[5, 5, 5]} intensity={2.6} color="#dde8f5" />
           
           <directionalLight
             position={[5,9,1]}
             castShadow
-            intensity={2.5}
+            intensity={2.6}
             color="#94A3B8"
           />
 
