@@ -55,6 +55,8 @@ const Hero = () => {
                                                 <a 
                                                 key={img}
                                                 href={link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
                                                 >
                                                 <img
                                                     src={img}
