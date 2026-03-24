@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="inner">
                 {/* โลโก้ + ลิงก์กลับไป hero */}
                 <a href="#hero" className="flex items-center gap-1 logo">
-                    <img src="images/logos/HouseNav.png" className="md:size-5 size-5" />
+                    <img src="/images/logos/HouseNav.png" className="md:size-5 size-5" />
                     <span>Home</span>
                 </a>
 

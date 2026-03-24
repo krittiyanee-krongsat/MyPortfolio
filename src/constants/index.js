@@ -53,7 +53,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: './images/NexTrip.jpg',
+    image: '/images/NexTrip.jpg',
     source_code_link: "https://github.com/krittiyanee-krongsat",
   },
 
@@ -75,7 +75,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: './images/CrudSystem.png',
+    image: '/images/CrudSystem.png',
     source_code_link: "https://github.com/krittiyanee-krongsat",
   },
 
@@ -97,7 +97,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: './images/PokeAPI.png',
+    image: '/images/PokeAPI.png',
     source_code_link: "https://github.com/krittiyanee-krongsat",
   },
 ]
@@ -105,8 +105,8 @@ const projects = [
 const experiences = [
   {
     review: "IT and multimedia consulting company specializing in the design and development of digital solutions, including web applications and interactive media.",
-    imgPath: "./images/CodeSmash.png",
-    logoPath: "./images/Logo_1.png",
+    imgPath: "/images/CodeSmash.png",
+    logoPath: "/images/Logo_1.png",
     title: "Full Stack Developer Internship",
     date: "June 2024 - November 2024",
     reponsibilities: [
@@ -117,8 +117,8 @@ const experiences = [
   },
   {
     review: "A Coursera course focused on applying Generative AI to improve collaboration, development workflows, and efficiency in software engineering teams.",
-    imgPath: "./images/Coursera.png",
-    logoPath: "./images/Logo_2.png",
+    imgPath: "/images/Coursera.png",
+    logoPath: "/images/Logo_2.png",
     title: "GenAI For Software Engineering Teams",
     date: "February 2025 ",
     reponsibilities: [
