@@ -75,8 +75,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: './images/CrudSystem.png',
-    source_code_link: "https://github.com/krittiyanee-krongsat",
+    image: './images/ToDoList.png',
+    source_code_link: "https://github.com/krittiyanee-krongsat/CrudSystemToDoList",
   },
 
   {
