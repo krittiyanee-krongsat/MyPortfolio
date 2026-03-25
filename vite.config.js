@@ -8,18 +8,4 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/MyPortfolio/',
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-          three: ['three', '@react-three/fiber', '@react-three/drei'],
-          gsap: ['gsap', '@gsap/react'],
-          framer: ['framer-motion'],
-          lottie: ['lottie-react'],
-        }
-      }
-    }
-  }
 })
