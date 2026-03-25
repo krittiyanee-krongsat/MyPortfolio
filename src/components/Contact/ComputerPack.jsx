@@ -2,10 +2,10 @@ import { useGLTF, useAnimations, useTexture, useVideoTexture } from '@react-thre
 import * as THREE from "three";
 
 export function ComputerPack(props) {
-  const { nodes, materials } = useGLTF('/models/computer_full_pack.glb')
+  const { nodes, materials } = useGLTF('./models/computer_full_pack.glb')
 
   //const matcapTexture = useTexture('/images/WallpaperCom.jpg');
-  const matcapTexture = useVideoTexture("/Videos/DisplayCode.mp4");
+  const matcapTexture = useVideoTexture("./Videos/DisplayCode.mp4");
 
   matcapTexture.rotation = -Math.PI / 2; // หมุน 90 องศา (ลองเปลี่ยนเป็น -Math.PI / 2 ถ้าหมุนผิดทาง)
   matcapTexture.center.set(0.5, 0.6);   // กำหนดจุดหมุน
@@ -40,5 +40,5 @@ export function ComputerPack(props) {
   )
 }
 
-useGLTF.preload('/models/computer_full_pack.glb');
+useGLTF.preload('./models/computer_full_pack.glb');
 export default ComputerPack;

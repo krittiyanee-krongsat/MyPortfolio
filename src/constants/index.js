@@ -21,15 +21,15 @@ const words = [
 
 const heroLinks = [
   {
-    img: '/images/logos/cv.png',
+    img: './images/logos/cv.png',
     link: 'https://www.youtube.com/'
   },
   {
-    img: '/images/logos/linkedin.png',
+    img: './images/logos/linkedin.png',
     link: 'https://www.linkedin.com/in/krittiyanee-krongsat-b669952b1'
   },
   {
-    img: '/images/logos/github.png',
+    img: './images/logos/github.png',
     link: 'https://github.com/krittiyanee-krongsat'
   },
 ]
@@ -53,7 +53,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: '/images/NexTrip.jpg',
+    image: './images/NexTrip.jpg',
     source_code_link: "https://github.com/krittiyanee-krongsat",
   },
 
@@ -75,7 +75,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: '/images/CrudSystem.png',
+    image: './images/CrudSystem.png',
     source_code_link: "https://github.com/krittiyanee-krongsat",
   },
 
@@ -97,7 +97,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: '/images/PokeAPI.png',
+    image: './images/PokeAPI.png',
     source_code_link: "https://github.com/krittiyanee-krongsat",
   },
 ]
@@ -105,8 +105,8 @@ const projects = [
 const experiences = [
   {
     review: "IT and multimedia consulting company specializing in the design and development of digital solutions, including web applications and interactive media.",
-    imgPath: "/images/CodeSmash.png",
-    logoPath: "/images/Logo_1.png",
+    imgPath: "./images/CodeSmash.png",
+    logoPath: "./images/Logo_1.png",
     title: "Full Stack Developer Internship",
     date: "June 2024 - November 2024",
     reponsibilities: [
@@ -117,8 +117,8 @@ const experiences = [
   },
   {
     review: "A Coursera course focused on applying Generative AI to improve collaboration, development workflows, and efficiency in software engineering teams.",
-    imgPath: "/images/Coursera.png",
-    logoPath: "/images/Logo_2.png",
+    imgPath: "./images/Coursera.png",
+    logoPath: "./images/Logo_2.png",
     title: "GenAI For Software Engineering Teams",
     date: "February 2025 ",
     reponsibilities: [
@@ -132,51 +132,51 @@ const experiences = [
 const technologies = [
   {
     name: "HTML 5",
-    icon: "/images/tech/html.png",
+    icon: "./images/tech/html.png",
   },
   {
     name: "CSS 3",
-    icon: "/images/tech/css.png",
+    icon: "./images/tech/css.png",
   },
   {
     name: "JavaScript",
-    icon: "/images/tech/javascript.png",
+    icon: "./images/tech/javascript.png",
   },
   {
     name: "TypeScript",
-    icon: "/images/tech/typescript.png",
+    icon: "./images/tech/typescript.png",
   },
   {
     name: "React JS",
-    icon: "/images/tech/reactjs.png",
+    icon: "./images/tech/reactjs.png",
   },
   {
     name: "Tailwind CSS",
-    icon: "/images/tech/tailwind.png",
+    icon: "./images/tech/tailwind.png",
   },
   {
     name: "Node JS",
-    icon: "/images/tech/nodejs.png",
+    icon: "./images/tech/nodejs.png",
   },
   {
     name: "Git",
-    icon: "/images/tech/git.png",
+    icon: "./images/tech/git.png",
   },
   {
     name: "MySQL",
-    icon: "/images/tech/mysql.svg",
+    icon: "./images/tech/mysql.svg",
   },
   {
     name: "Figma",
-    icon: "/images/tech/figma.png",
+    icon: "./images/tech/figma.png",
   },
   {
     name: "Storybook",
-    icon: "/images/tech/storybook.svg",
+    icon: "./images/tech/storybook.svg",
   },
   {
     name: "Three JS",
-    icon: "/images/tech/threejs.svg",
+    icon: "./images/tech/threejs.svg",
   },
 ]
 

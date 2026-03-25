@@ -16,7 +16,7 @@ const Button = ({ text, className, id, href = '#', onClick }) => {
             <p className="text">{text}</p>
             {/* ไอคอนลูกศร */}
             <div className="arrow-wrapper">
-                <img src="/images/arrow-down.svg" alt="arrow"/>
+                <img src="./images/arrow-down.svg" alt="arrow"/>
             </div>
         </div>
     </a>
