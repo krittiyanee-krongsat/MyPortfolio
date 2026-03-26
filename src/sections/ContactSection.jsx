@@ -125,7 +125,7 @@ const ContactSection = () => {
               </div>
               <div className="xl:col-span-7 min-h-96">
                 <div className="bg-slate-400 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-                  
+                  <ComputerExperience/>
                 </div>
               </div>
             </div>
