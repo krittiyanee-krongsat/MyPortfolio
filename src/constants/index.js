@@ -60,7 +60,7 @@ const projects = [
   {
     name: "CRUD System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full-stack To Do List application built with the MERN Stack (MongoDB, Express, React, Node.js) featuring full CRUD operations and a clean UI powered by Tailwind CSS.",
     tags: [
       {
         name: "react",
