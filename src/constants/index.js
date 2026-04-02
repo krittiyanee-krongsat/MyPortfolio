@@ -60,7 +60,7 @@ const projects = [
   {
     name: "CRUD System",
     description:
-      "A full-stack To Do List application built with the MERN Stack (MongoDB, Express, React, Node.js) featuring full CRUD operations and a clean UI powered by Tailwind CSS.",
+      "A full-stack To Do List application developed with the MERN stack, supporting full CRUD operations and featuring a responsive UI designed with Tailwind CSS.",
     tags: [
       {
         name: "react",
@@ -80,16 +80,16 @@ const projects = [
   },
 
   {
-    name: "Poke API",
+    name: "Weather App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A responsive weather forecast application developed with Angular, utilizing the Open-Meteo API to deliver real-time weather updates, with a clean UI and intuitive user experience.",
     tags: [
       {
-        name: "react",
+        name: "angular",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Open-Meteo-API",
         color: "green-text-gradient",
       },
       {
@@ -97,8 +97,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: './images/PokeAPI.png',
-    source_code_link: "https://github.com/krittiyanee-krongsat",
+    image: './images/WeatherApp.png',
+    source_code_link: "https://github.com/krittiyanee-krongsat/WeatherApp",
   },
 ]
 
