@@ -54,7 +54,7 @@ const projects = [
       },
     ],
     image: './images/NexTrip.jpg',
-    source_code_link: "https://github.com/krittiyanee-krongsat",
+    source_code_link: "https://github.com/krittiyanee-krongsat/TravelAppOpenAI",
   },
 
   {
