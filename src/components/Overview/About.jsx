@@ -81,17 +81,17 @@ const About = ({clientHeight}) => {
                 >
                 {/* บรรทัดที่ 1 */}
                 <span className="overview-content-1 leading-tight">
-                    I am interested in Frontend Development{" "}
+                    Building software that solves{" "}
                     <br/>
                 </span>
                 {/* บรรทัดที่ 2 */}
                 <span className="overview-content-2 leading-tight">
-                    and committed to building secure{" "}
+                    real-world problems{" "}
                     <br/>
                 </span>
                 {/* บรรทัดที่ 3 */}
                 <span className="overview-content-3 leading-tight">
-                    user friendly and accessible websites.{" "}
+                    and turns ideas into working products.{" "}
                     <br/>
                 </span>
                 </h1>

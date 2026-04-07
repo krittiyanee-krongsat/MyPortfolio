@@ -26,7 +26,7 @@ const heroLinks = [
   },
   {
     img: './images/logos/linkedin.png',
-    link: 'https://www.linkedin.com/in/krittiyanee-krongsat-b669952b1'
+    link: 'linkedin.com/in/krittiyanee-krongsat'
   },
   {
     img: './images/logos/github.png',
