@@ -22,11 +22,11 @@ const words = [
 const heroLinks = [
   {
     img: './images/logos/cv.png',
-    link: 'https://www.youtube.com/'
+    link: '/images/Resume.pdf'
   },
   {
     img: './images/logos/linkedin.png',
-    link: 'linkedin.com/in/krittiyanee-krongsat'
+    link: 'https://www.linkedin.com/in/krittiyanee-krongsat'
   },
   {
     img: './images/logos/github.png',
