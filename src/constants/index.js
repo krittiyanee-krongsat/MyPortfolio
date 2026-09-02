@@ -164,7 +164,7 @@ const technologies = [
   },
   {
     name: "MySQL",
-    icon: "./images/tech/mysql.svg",
+    icon: "./images/tech/mysql.png",
   },
   {
     name: "Figma",
@@ -172,11 +172,11 @@ const technologies = [
   },
   {
     name: "Storybook",
-    icon: "./images/tech/storybook.svg",
+    icon: "./images/tech/storybook.png",
   },
   {
     name: "Three JS",
-    icon: "./images/tech/threejs.svg",
+    icon: "./images/tech/threejs.png",
   },
 ]
 
